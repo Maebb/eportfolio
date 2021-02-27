@@ -2,8 +2,15 @@ body {
 	background-image:url("images/background2.jpg");
 	background-size:cover;
 }
+body.margin-right {
+	margin-right:200px;
+}
 
 h1 {
+	text-align:center;
+}
+
+h3 {
 	text-align:center;
 }
 
@@ -19,11 +26,11 @@ p {
 	text-align:justify;
 }
 
-h5 {
-	text-align:center;
+img {
+	width:100%;
 }
 
 img.margin-top {
 	margin-top:200px;
 }
-	
+
