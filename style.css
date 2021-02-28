@@ -7,17 +7,10 @@ body.margin-right {
 	margin-right:200px;
 }
 
-h1 {
+h1, h2, h3 {
 	text-align:center;
 }
 
-h2 {
-	text-align:center;
-}
-
-h3 {
-	text-align:center;
-}
 
 table {
 	margin:auto 0;
@@ -73,4 +66,16 @@ nav a:hover {
 
 img:hover {
 	transform:scale(1.1);
+}
+
+div.mi {
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh; */
+	width:50%;
+	float:left;
+	padding:30px;
+	font-size:20px;	
 }
