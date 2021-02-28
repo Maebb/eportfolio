@@ -64,6 +64,10 @@ nav a:hover {
 	color:red
 }
 
+.font20 {
+	font-size: 20px;
+}
+
 img:hover {
 	transform:scale(1.1);
 }
@@ -78,4 +82,22 @@ div.mi {
 	float:left;
 	padding:30px;
 	font-size:20px;	
+}
+
+img.no-hover:hover {
+	transform: none;
+}
+
+img.icon {
+	width: 50px;
+	float: left;
+	margin-right: 10px
+}
+
+
+/* Permet de nettoyer l'espace après un float */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }

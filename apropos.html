@@ -6,40 +6,54 @@
 		<meta charset="utf8" >
 	</head>
 	<body class="margin-right">
-	
-		<h1> QUI SUIS-JE </h1> 
+		<h1>QUI SUIS-JE</h1> 
 		<table>
 			<tr> 
-				<td width="25%">
-					<img src="images/IDE.jpg" alt="une photo de moi">
+				<td width="400px">
+					<img class="no-hover" src="images/IDE.jpg" alt="une photo de moi">
+					<div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44527.503156411025!2d4.8548070049567835!3d45.77181257025314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4c02fcd7623af%3A0xc3ba0c2b255b2652!2s69100%20Villeurbanne!5e0!3m2!1sfr!2sfr!4v1614549489134!5m2!1sfr!2sfr" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
 				</td>
-				<td width="25%">
-					<p> pourquoi ce portfolio </p>
+				<td class="font20">
+					<p>Je m'appelle <strong>Maeva Rouby</strong>. J'ai <span id="age"></span> ans et je vis à Villeurbanne.</p>
+					<p>
+						<img class="icon no-hover" src="images/syringe.png" alt="Icone seringue">
+						Je suis Infirmière Diplômée d'État depuis 2019.
+					</p>
+					<div class="clearfix"></div>
+					<p>Je suis en <a href="master.html">Master en Sciences de l'Éducation et de la Formation</a>.
 				</td>
 			</tr>
 		</table>
-	<nav> 
-		<ul>
-			<li>
-				<a href="index.html">Accueil</a>
-			</li>
-			<li>
-				<a href="loisirs.html">Loisirs</a>
-			</li>
-			<li>
-				<a href="vieassociative.html">Vie associative</a>
-			</li>
-			<li>
-				<a href="experiences pro.html">Experiences professionnelles</a>
-			</li>
-			<li>
-				<a href="master.html">Master</a>
-			</li>
-			<li>
-				<a href="apropos.html">A propos</a>
-			</li>
-		</ul>
-	</nav>
-	
+		<nav> 
+			<ul>
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="loisirs.html">Loisirs</a>
+				</li>
+				<li>
+					<a href="vieassociative.html">Vie associative</a>
+				</li>
+				<li>
+					<a href="experiences pro.html">Experiences professionnelles</a>
+				</li>
+				<li>
+					<a href="master.html">Master</a>
+				</li>
+				<li>
+					<a href="apropos.html">A propos</a>
+				</li>
+			</ul>
+		</nav>
+		
+	<script>
+		const now = new Date();
+		const maevaBirthday = new Date('1996-11-26')
+		let age = new Date(now - maevaBirthday)
+		document.getElementById('age').innerHTML = Math.abs(age.getUTCFullYear() - 1970);
+	</script>
 	</body>
 </html>
