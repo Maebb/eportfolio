@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+
+<html lang="fr">
+	<head>
+		<title>Le réeseau associatif</title>
+		<link rel="stylesheet" href="style.css" >
+		<meta charset="utf8" >
+	</head>
+	<body>
+		<h1><a href="index.html">Accueil</a> > <a href="vieassociative.html"> Vie associative </a> > Le réseau</h1> 
+		<div class="mi"> 
+			<p> Grâce à mes différents postes dans les associations estudiantines, 
+			j’ai pu rencontrer de nombreux étudiants en santé mais aussi des étudiants en informatique, 
+			psychologie… Ce réseau m’a permis d’ouvrir mon esprit quant aux autres formations,
+			à leurs problématiques mais aussi d’échanger sur les différentes façons de faire dans nos associations respectives. </p>
+			<p> Grâce à ce réseau j’ai pu découvrir des amis, mais aussi des connaissances qui me permettent de répondre 
+			à des questions sur la poursuite des études, sur les droits en tant qu’étudiant. Désormais, j’ai un réseau 
+			afin de m’aider dans des problématiques sociales comme le CROUS par exemple, le droit des étudiants infirmiers 
+			(que j’encadre lors de mes journées de travail), j’ai pu aussi comprendre que les étudiants en soins infirmiers 
+			sont malmenés mais les étudiants en maïeutique ou encore en médecine le sont aussi.  Les infirmiers ne sont pas le 
+			centre du monde, et grâce à ce réseau pluri-filière j’ai pu ouvrir mon esprit et me battre pour tous les étudiants. </p>
+		</div>
+		<table>
+			<tr>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+			</tr>
+			<tr>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+			</tr>
+			<tr>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+				<td width="33%"> <img src=".jpg" class="modalImg" alt=""> </td>
+			</tr>
+		
+		</table>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+		  <!-- The Close Button -->
+		  <span class="close">&times;</span>
+
+		  <!-- Modal Content (The Image) -->
+		  <img class="modal-content no-hover" id="image-modal">
+
+		  <!-- Modal Caption (Image Text) -->
+		  <div id="caption"></div>
+		</div>
+		
+		<script>
+			var modal = document.getElementById("myModal");
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+			var images = document.getElementsByClassName("modalImg");
+			var modalImg = document.getElementById("image-modal");
+			var captionText = document.getElementById("caption");
+			for (var i = 0; i < images.length; i++) {
+			   images.item(i).onclick = function() {
+				  modal.style.display = "block";
+				  modalImg.src = this.src;
+				  captionText.innerHTML = this.alt;
+				}
+			}
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+			  modal.style.display = "none";
+			}
+		</script>
+	</body>
+</html>
