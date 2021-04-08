@@ -256,7 +256,11 @@ $(document).ready(function () {
     let colorcode = {
         'period1': '#fec541',
         'period2': '#36d484',
-        'period3': '#32ccf4'
+        'period3': '#32ccf4',
+		'period4': '#f5aa42',
+		'period5': '#aa42f5',
+		'period6': '#ff0000',
+		'period7': '#000dff',
     };
     let timeline = new PRESTimeline($('#this-timeline'), colorcode);
 });

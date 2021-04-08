@@ -96,6 +96,7 @@ img.icon {
 	margin-right: 10px
 }
 
+
 .center-all {
 	vertical-align:middle;
 	text-align:center;
@@ -299,8 +300,9 @@ img.icon {
   z-index: 0;
 }
 .periods-container section .year {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 400;
+ 
 }
 .periods-container section .title {
   color: #4A4A4A;
