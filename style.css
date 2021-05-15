@@ -96,6 +96,12 @@ img.icon {
 	margin-right: 10px
 }
 
+img.tap-icon {
+	width: 30px!important;
+	height: 30px!important;
+	float: none!important;
+}
+
 
 .center-all {
 	vertical-align:middle;
@@ -471,5 +477,12 @@ img.icon {
   font-weight: 400;
 }
 .cards-container section img {
-  width: 100%;
+  transform: none;
+  height: 400px;
+  width: auto;
+  float: left;
+  padding: 10px;
+}
+.cards-container section p {
+	padding: 10px;
 }
