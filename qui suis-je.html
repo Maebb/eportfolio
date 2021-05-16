@@ -5,50 +5,45 @@
 		<link rel="stylesheet" href="style.css" >
 		<meta charset="utf8" >
 	</head>
-	<body class="margin-right">
-		<h1>QUI SUIS-JE</h1> <h1><a href="index.html">Accueil</a></h1> 
-		<table>
-			<tr> 
-				<td width="33%" class="font20" style="border-right:solid 1px">
-					<p>
-						Je m'appelle Maeva, et … Maeva signifie <strong>« Bienvenue »</strong> en polynésien français. 
-					</p>
-					<p>
-						Il semblerait que mes parents n'aient pas choisi ce prénom pour cette raison, 
-						mais plus par affinité, et cela il y a déjà <span id="age"></span>. 
-					</p>
-					<p>
-						Je vis à Villeurbanne, ce qui est très intéressant pour ma part car je suis très proche des hôpitaux,
-						ce qui est un avantage considérable pour une <a href="ide.html">infirmière</a> qui fait de l’intérim 
-						et qui n'est pas très lève tôt !
-					</p>
-					<p>
-						Effectivement je suis diplômée depuis 2019, et je travaille de temps à autre lorsque mon planning de 
-						master me le permet. 
-					</p>
-					<p>
-						Ah, oui ! Je suis actuellement en <a href="master.html">Master 1 en Sciences de l'Éducation et de la 
-						Formation option formation de l’adulte</a>. 
-						J’ai choisi ce master afin de compléter ma licence en soins infirmiers.
-					</p>
-					<p>
-						Ce master était finalement une évidence après mes expériences associatives qui me prenait beaucoup de 
-						temps lors de mes études. Désormais je me consacre plutôt à la <a href="patisserie">pâtisserie</a>, 
-						qui me permet de me détendre et de régaler ma famille. 
-						Évidemment, vous en saurez davantage sur chaque moment clé de ma vie dans le détail de ce portfolio.
-					</p>
-					
-				</td>
-			</tr>
-		</table>
-
-			
-		
-	<script>
-		const now = new Date();
-		const maevaBirthday = new Date('1996-11-26')
-		let age = new Date(now - maevaBirthday)
-		document.getElementById('age').innerHTML = Math.abs(age.getUTCFullYear() - 1970);
-	</script>
+	<body>
+		<h1>QUI SUIS-JE</h1>
+		<h2>
+			<a href="index.html">Accueil</a>
+		</h2>
+		<div class="main">
+			<p>
+				Je m'appelle Maeva, et … Maeva signifie <strong>« Bienvenue »</strong> en polynésien français. 
+			</p>
+			<p>
+				Il semblerait que mes parents n'aient pas choisi ce prénom pour cette raison, 
+				mais plus par affinité, et cela il y a déjà <span id="age"></span> ans. 
+			</p>
+			<p>
+				Je vis à Villeurbanne, ce qui est très intéressant pour ma part car je suis très proche des hôpitaux,
+				ce qui est un avantage considérable pour une <a href="ide.html">infirmière</a> qui fait de l’intérim 
+				et qui n'est pas très lève tôt !
+			</p>
+			<p>
+				Effectivement je suis diplômée depuis 2019, et je travaille de temps à autre lorsque mon planning de 
+				master me le permet. 
+			</p>
+			<p>
+				Ah, oui ! Je suis actuellement en <a href="master.html">Master 1 en Sciences de l'Éducation et de la 
+				Formation option formation de l’adulte</a>. 
+				J’ai choisi ce master afin de compléter ma licence en soins infirmiers.
+			</p>
+			<p>
+				Ce master était finalement une évidence après mes expériences associatives qui me prenait beaucoup de 
+				temps lors de mes études. Désormais je me consacre plutôt à la <a href="patisserie.html">pâtisserie</a>, 
+				qui me permet de me détendre et de régaler ma famille. 
+				Évidemment, vous en saurez davantage sur chaque moment clé de ma vie dans le détail de ce portfolio.
+			</p>
+		</div>
+		<script>
+			const now = new Date();
+			const maevaBirthday = new Date('1996-11-26')
+			let age = new Date(now - maevaBirthday)
+			document.getElementById('age').innerHTML = Math.abs(age.getUTCFullYear() - 1970);
+		</script>
 	</body>
 </html>
