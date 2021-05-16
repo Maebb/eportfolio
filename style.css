@@ -112,10 +112,13 @@ img.tap-icon {
 	float: none!important;
 }
 
-
 .center-all {
 	vertical-align:middle;
 	text-align:center;
+}
+
+.content p {
+	font-size: 1.5em;
 }
 
 
